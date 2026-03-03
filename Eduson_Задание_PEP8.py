@@ -1,12 +1,12 @@
 # Получение коэффициентов
-first_coefficient = int(input('a = ', ))
+first_coefficient=int(input('a = ', ))
 second_coefficient = int(input('b = ', ))
 third_coefficient = int(input('c = ', ))
 
 # Решение по сокращенной формуле, т.к. b - четное
 if first_coefficient != 0 and second_coefficient % 2 == 0 and third_coefficient != 0:
-    k = second_coefficient / 2
-    d1 = k ** 2 - first_coefficient * third_coefficient
+    k: float = second_coefficient / 2
+    d1: float = k ** 2 - first_coefficient * third_coefficient
     k1 = (-k + d1 ** 0.5) / first_coefficient
     k2 = (-k - d1 ** 0.5) / first_coefficient
 
